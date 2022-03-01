@@ -13,30 +13,21 @@
 
 <body>
 
-    <main class="main">
-        <h1>HELLO <span id="name"></span> !
-            <br>
-            WELCOME TO
-            <br>
-            MazzCode
-            <br>
-            ENJOY YOUR TRIP!
-        </h1>
-        <div class="video-container">
-            <div class="color-overlay"></div>
-            <video src="images/space_-_31667 (Original).mp4" class="bg-video" muted loop autoplay></video>
-        </div>
-
-        <div class="link-container">
-            <a href="#" class="link">click</a>
-        </div>
-    </main>
+    <div class="container">
+        <video src="images/wormhole_-_42586 (Original).mp4" loop muted autoplay class="vid"></video>
+        <form action="home.html" class="form" autocomplete="off">
+            <input class="visitor-name" type="text" id="txt" placeholder="ENTER YOUR NAME" size="50">
+            <input class="btn" type="submit" value="Let's go!" onclick="welcome();">
+        </form>
+    </div>
 
 
     <script>
-
-        document.getElementById('name').innerHTML = localStorage.getItem('textvalue');
-
+        function welcome() {
+            var clientName = document.getElementById('txt').value;
+            localStorage.setItem('textvalue', clientName);
+            return false;
+        }
     </script>
 </body>
 

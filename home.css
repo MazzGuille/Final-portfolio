@@ -1,87 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
 @import "https://unpkg.com/open-props";
+
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 html {
   font-size: 10px;
-  font-family: "Kanit", sans-serif;
 }
 
-body {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main {
-  position: relative;
+  justify-content: center;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.form {
+  z-index: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  position: absolute;
 }
 
-h1 {
+.form input {
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
+}
+
+.visitor-name {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  height: 10rem;
+  font-size: 2.6rem;
   text-align: center;
+  color: #0f1957d7;
+  text-shadow: -1px -1px 1px #bec1c7, -2px -2px 2px #081a81d7;
   text-transform: uppercase;
-  font-size: 5rem;
-  color: rgb(210, 213, 233);
-  z-index: 10;
-  line-height: 8rem;
-  margin-bottom: 15%;
-  background: linear-gradient(to bottom, #ffffff 0%, #000000 0%);
-  font-weight: 700px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: -5px -5px 1px #2d76f7;
-  opacity: 80;
-  animation: var(--animation-slide-in-right) forwards;
-  animation-duration: 2000ms;
+  margin-top: -25%;
+  animation: var(--animation-float);
+  
 }
 
-.link-container {
-  height: auto;
-  z-index: 1;
-  position: absolute;
-  top: 80%;
+.visitor-name::placeholder {
   text-align: center;
-  font-size: 4rem;
-  color: rgb(210, 213, 233);
-  background: linear-gradient(to bottom, #ffffff 0%, #000000 0%);
-  font-weight: 700px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: -5px -5px 1px #2d76f7;
-  animation: var(--animation-slide-in-left) forwards;
-  animation-duration: 2000ms;
+  font-size: 2.6rem;
+  color: #0f1957d7;
+  text-shadow: -1px -1px 1px #bec1c7, -2px -2px 2px #081a81d7;
+  text-transform: uppercase;
 }
 
-.link-container a {
-  text-decoration: none;
+.btn {
+  background: none;
+  text-align: center;
+  font-size: 2.6rem;
+  color: #0f1957d7;
+  text-shadow: -1px -1px 1px #bec1c7, -2px -2px 2px #081a81d7;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  
+
+}
+.btn{
+    animation: var(--animation-float);
 }
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.btn:hover{
+    cursor: pointer;
+    animation: var(--animation-scale-up) forwards;
+    animation-duration: 2000ms;
+    
+    
 }
-
-.color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(90, 100, 226);
-  opacity: 0.5;
-}
-
