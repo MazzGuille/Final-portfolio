@@ -61,7 +61,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   text-shadow: -5px -5px 1px #2d76f7;
   animation: var(--animation-slide-in-left) forwards;
-  animation-duration: 2000ms;
+  animation-duration: 3500ms;
 }
 
 .link-container a {
