@@ -31,7 +31,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 5rem;
-  color: white;
+  color: rgb(210, 213, 233);
   z-index: 10;
   line-height: 8rem;
   margin-bottom: 15%;
@@ -40,10 +40,10 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: -5px -5px 1px #2d76f7;
+  text-shadow: -5px -5px 1px #76a0e7;
   opacity: 80;
   animation: var(--animation-slide-in-right) forwards;
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
 }
 
 .link-container {
