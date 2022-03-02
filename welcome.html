@@ -8,10 +8,35 @@
     <link rel="stylesheet" href="welcome.css">
     <link rel="stylesheet" href="master.css">
 
+    
+
     <title>MazzCode</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburguer-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="main">
         <h1>HELLO <span id="name"></span> !
@@ -33,11 +58,7 @@
     </main>
 
 
-    <script>
-
-        document.getElementById('name').innerHTML = localStorage.getItem('textvalue');
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
