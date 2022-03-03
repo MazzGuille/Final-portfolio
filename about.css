@@ -1,8 +1,247 @@
-.video { 
-    background: no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: absolute;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+@import "https://unpkg.com/open-props";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Kanit", sans-serif;
+  background: url(images/earth-ge113a6ad7_1920.png) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 10px;
+}
+
+header {
+  background: none;
+}
+
+.hamburguer-menu {
+  width: 3.5rem;
+  height: 3rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  z-index: 2;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #eee;
+  transition: all 0.8s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-0.8rem, 0.6rem);
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-0.8rem, -0.6rem);
+}
+.navbar {
+  width: 30rem;
+  height: 100%;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  right: -300rem;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60% 0 0 60%;
+  transition: right 0.84s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+  right: 0;
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 2.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #eee;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.wraper {
+  width: 80%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(5rem, 1fr));
+   
+  grid-template-areas:
+    "b b b b b b"
+    "h1 h1 h1 h1 h1 h1"
+    "hand ph ph ph ph ph"
+    "sec sec sec sec sec sec"
+    "h2 h2 h2 h2 h2 h2"
+    "h2p h2p h2p h2p2 h2p2 h2p2"
+    "h2p h2p h2p h2p2 h2p2 h2p2"
+    "pr pr pr pr pr pr"
+    "ctc ctc ctc ctc ctc ctc";
+}
+
+.title {
+  grid-area: h1;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding-top: 10%;
+}
+
+.hand {
+  height: 8rem;
+  width: 8rem;
+  grid-area: hand;
+}
+
+.hand img {
+  width: 100%;
+  height: auto;
+}
+
+.presentation {
+  grid-area: ph;
+  font-size: 1.4rem;
+  color: white;
+  width: 100%;
+  
+}
+
+.presentation p {
+ padding-left: 2rem;
+}
+
+.me-in-30 {
+  grid-area: sec;
+  font-size: 1.4rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.me-in-30 p{
+  padding: 0 2rem;
+}
+
+.project-title{
+  grid-area: h2;
+  font-size: 1.8rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.project-title h2{
+  text-align: center;
+}
+
+.project1{
+  grid-area: h2p;
+  font-size: 1.4rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.project2{
+  grid-area: h2p2;
+  font-size: 1.4rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.show{
+  grid-area: pr;
+  font-size: 1.4rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact{
+  grid-area: ctc;  
+  align-items: center;
+  justify-content: center;  
+  background-color: aqua;
+  border-radius: 1.6rem;
+  height: 3rem;
+  padding-top: .5rem;
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact a{
+  text-decoration: none; 
+  font-size: 1.4rem;
+  color: white;
+  text-align: center; 
+}
