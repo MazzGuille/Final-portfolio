@@ -9,13 +9,13 @@
 html {
   font-size: 10px;
   font-family: "Kanit", sans-serif; 
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(images/earth-ge113a6ad7_1920.png);
-    background-position: center center;
-    background-size: cover;
-  font-size: 10px;
-  background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(images/earth-ge113a6ad7_1920.png), no-repeat, center;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
 }
-
 
 
 
@@ -123,7 +123,7 @@ header {
 .wraper {
   width: 80%;
   height: 100vh;
-  
+    
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -156,6 +156,8 @@ height: 4rem;
   justify-content: center;
   width: fit-content;
   padding-top: 10%;
+  animation: var(--animation-slide-in-up);
+  animation-duration: 3500ms;
   
 }
 
@@ -163,6 +165,8 @@ height: 4rem;
   height: 8rem;
   width: 8rem;
   grid-area: hand;
+  animation: var(--animation-slide-in-up);
+  animation-duration: 3500ms;
 }
 
 .hand img {
@@ -175,11 +179,15 @@ height: 4rem;
   font-size: 2.3em;
   color: white;
   width: 100%;
+  animation: var(--animation-slide-in-up);
+  animation-duration: 3500ms;
   
 }
 
 .presentation p {
  padding-left: 2rem;
+ animation: var(--animation-slide-in-up);
+ animation-duration: 3500ms;
 }
 
 .me-in-30 {
@@ -188,11 +196,14 @@ height: 4rem;
   color: white;
   align-items: center;
   justify-content: center;
+ 
 }
 
 
 .me-in-30 p{
   padding: 0 2rem;
+  animation: var(--animation-slide-in-up);
+  animation-duration: 3500ms;
 }
 
 .project-title{
@@ -202,10 +213,13 @@ height: 4rem;
   align-items: center;
   justify-content: center;
   height: fit-content;
+  
 }
 
 .project-title h2{
   text-align: center;
+  animation: var(--animation-slide-in-up);
+  animation-duration: 3500ms;
 }
 
 .project1{
@@ -214,9 +228,10 @@ height: 4rem;
   color: white;
   align-items: center;
   justify-content: center;
+
 }
 
-
+ 
 
 .project2{
   grid-area: h2p2;
