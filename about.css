@@ -10,16 +10,13 @@ html {
   font-size: 10px;
   font-family: "Kanit", sans-serif; 
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(images/earth-ge113a6ad7_1920.png);
-    background-position: no-repeat, center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-position: center center;
+    background-size: cover;
   font-size: 10px;
   overflow: hidden;
   background-repeat: no-repeat;
-  
 }
+
 
 
 
