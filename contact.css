@@ -133,8 +133,8 @@ header {
   "eside eside etop etop etop etop"
   "esdie esdie journy journy journy journy"
   "esdie esdie journy journy journy journy"
-  "smedia smedia smedia form form form"
-  "smedia smedia smedia form form form"
+  "smedia smedia form form form form"
+  "smedia smedia form form form form"
   ;
 }
 
@@ -162,3 +162,41 @@ header {
   .text i{
     font-weight: 700;
   }
+
+  .form-container{
+    grid-area: form;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;   
+  }
+
+
+  .name-container input{
+    border-radius: 1rem;
+    border: .2rem solid white;
+  }
+
+  .name-container input::placeholder{
+    padding-left: 1rem;
+  }
+
+  .email-container input{
+    border-radius: 1rem;
+    border: .2rem solid white;
+  }
+
+  .email-container input::placeholder{
+    padding-left: 1rem;
+  }
+
+  .message-container textarea{
+    border-radius: 1rem;
+    border: .2rem solid white;
+  }
+
+  .message-container textarea::placeholder{
+    padding-left: 1rem;
+  }
+ 
