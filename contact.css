@@ -159,8 +159,8 @@ header {
   top: 0;
   }
 
-  .text i{
-    font-weight: 700;
+  .slogan{
+    font-size: 3.5rem;
   }
 
   .form-container{
@@ -176,6 +176,7 @@ header {
   .name-container input{
     border-radius: 1rem;
     border: .2rem solid white;
+    height: 3rem;
   }
 
   .name-container input::placeholder{
@@ -185,6 +186,7 @@ header {
   .email-container input{
     border-radius: 1rem;
     border: .2rem solid white;
+    height: 3rem;
   }
 
   .email-container input::placeholder{
@@ -200,3 +202,35 @@ header {
     padding-left: 1rem;
   }
  
+  .button-container{
+    position: relative;
+    width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button{
+    position: absolute;
+    left: 3.5rem;
+    width: 15rem;
+    border-radius: 1.3rem;
+    border: .2rem solid white;
+    background-color: #098FB3;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .btn-txt{
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.7rem;
+  }
+
+  .btn-icon{
+    color: white;
+    position: absolute;
+    right: 2rem;
+    top: .5rem;
+  }
+
