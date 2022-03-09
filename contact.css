@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+@import "https://unpkg.com/open-props";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Kanit", sans-serif; 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(images/beach-1449008_1920.jpg), no-repeat, center;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+header {
+  background: none;
+  height: min-content;
+}
+
+.hamburguer-menu {
+    width: 3.5rem;
+    height: 3rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 20;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .line {
+    width: 100%;
+    height: 0.3rem;
+    background-color: #eee;
+    transition: all 0.8s;
+  }
+  
+  .change .line-1 {
+    transform: rotateZ(-405deg) translate(-0.8rem, 0.6rem);
+  }
+  
+  .change .line-2 {
+    opacity: 0;
+  }
+  
+  .change .line-3 {
+    transform: rotateZ(405deg) translate(-0.8rem, -0.6rem);
+  }
+  .navbar {
+    width: 30rem;
+    height: 100%;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    right: -300rem;
+    z-index: 60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60% 0 0 60%;
+    transition: right 0.84s cubic-bezier(1, 0, 0, 1);
+  }
+  
+  .change {
+    right: 0;
+  }
+  
+  .nav-list {
+    text-align: right;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin: 2.5rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0.2rem 0;
+  }
+  
+  .nav-link::before,
+  .nav-link::after {
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background-color: #eee;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  
+  .nav-link::after {
+    bottom: 0;
+    transform-origin: right;
+  }
+  
+  .nav-link::before {
+    top: 0;
+    transform-origin: left;
+  }
+  
+  .nav-link:hover::before,
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  .wraper{
+  width: 80%;
+  height: 100vh;
+    
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(5rem, 1fr));
+  grid-template-rows: 6%, 6%, 21.5%, 10%, 28.25%, 28.25%;
+  grid-template-areas: 
+  "eside eside etop etop etop etop"
+  "eside eside etop etop etop etop"
+  "esdie esdie journy journy journy journy"
+  "esdie esdie journy journy journy journy"
+  "smedia smedia smedia form form form"
+  "smedia smedia smedia form form form"
+  ;
+}
+
+.top-empty{
+    grid-area: eside;
+    width: 100%;
+    height: 100%;
+}
+.side-empty{
+    grid-area: eside;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.text{
+    grid-area: journy;
+    font-size: 2.3em;
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  }
+
+  .text i{
+    font-weight: 700;
+  }
