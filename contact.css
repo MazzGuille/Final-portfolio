@@ -234,3 +234,29 @@ header {
     top: .5rem;
   }
 
+
+  @media(max-width: 700px){
+    .wraper{
+      display: grid;
+    grid-template-columns: repeat(6, minmax(5rem, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas: 
+    
+    "journy journy journy journy esdie esdie"
+    "journy journy journy journy esdie esdie"
+    "smedia smedia smedia smedia smedia smedia"
+    ". form form form form ."
+    }
+
+    .text p{
+      font-size: 1.8rem;
+    }
+
+    .slogan{
+      font-size: 2.5rem;
+    }
+    .name-container{
+      width: 50px;
+    }
+    
+  }
