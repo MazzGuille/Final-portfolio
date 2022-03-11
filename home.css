@@ -10,6 +10,12 @@
 
 html {
   font-size: 10px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(images/astronomy-1850461_1920.jpg), no-repeat, center;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
  }
 
 .container {
@@ -21,6 +27,7 @@ html {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  padding-top: 25%;
 }
 
 .form {
@@ -43,10 +50,10 @@ html {
   resize: none;
   outline: none;
   height: 10rem;
-  font-size: 2.6rem;
+  font-size: 4rem;
   text-align: center;
-  color: #0f1957d7;
-  text-shadow: -1px -1px 1px #bec1c7, -2px -2px 2px #081a81d7;
+  color: white;
+  text-shadow: -1px -1px 1px #098FB3, -2px -2px 2px white;
   text-transform: uppercase;
   margin-top: -25%;
   animation: var(--animation-float);
@@ -55,18 +62,18 @@ html {
 
 .visitor-name::placeholder {
   text-align: center;
-  font-size: 2.6rem;
-  color: #0f1957d7;
-  text-shadow: -1px -1px 1px #bec1c7, -2px -2px 2px #081a81d7;
+  font-size: 4rem;
+  color: white;
+  text-shadow: -1px -1px 1px #098FB3, -2px -2px 2px white;
   text-transform: uppercase;
 }
 
 .btn {
   background: none;
   text-align: center;
-  font-size: 2.6rem;
-  color: #0f1957d7;
-  text-shadow: -1px -1px 1px #bec1c7, -2px -2px 2px #081a81d7;
+  font-size: 4rem;
+  color: white;
+  text-shadow: -1px -1px 1px #098FB3, -2px -2px 2px white;
   text-transform: uppercase;
   outline: none;
   border: none;
@@ -75,6 +82,7 @@ html {
 }
 .btn{
     animation: var(--animation-float);
+    width: 100%;
 }
 
 .btn:hover{
@@ -83,4 +91,10 @@ html {
     animation-duration: 2000ms;
     
     
+}
+
+@media (min-width: 1440px){
+  html{
+    font-size: 15px
+  }
 }
