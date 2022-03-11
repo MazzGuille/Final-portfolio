@@ -9,7 +9,7 @@
 html {
   font-size: 10px;
   font-family: "Kanit", sans-serif;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(images/astronomy-1850461_1920.jpg), no-repeat, center;  
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/earth-ge113a6ad7_1920.png), no-repeat, center;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,13 +18,7 @@ html {
  
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
 
-}
 header{
   background: none;
 }
@@ -138,57 +132,38 @@ transform: rotateZ(-405deg) translate(-.8rem, .6rem);
 }
 
 h1 {
+  font-size: 4rem;
   text-align: center;
+  color: white;
+  text-shadow: -1px -1px 1px #098FB3, -2px -2px 2px white;
   text-transform: uppercase;
-  font-size: 5rem;
-  padding: .8rem;
-  color: rgb(210, 213, 233);
-  z-index: 10;
-  line-height: 8rem;
-  margin-bottom: 15%;
-  background: linear-gradient(to bottom, #ffffff 0%, #000000 0%);
-  font-weight: 700px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: -5px -5px 1px #76a0e7;
-  opacity: 80;
+  margin-top: -13%;
+  animation: var(--animation-float);
   animation: var(--animation-slide-in-right) forwards;
   animation-duration: 3000ms;
 }
 
 .link-container {
-  height: auto;
-  z-index: 10;
-  position: absolute;
-  top: 75%;
-  width: auto;
-  margin: auto;
-  font-size: 4rem;
-  color: rgb(210, 213, 233);
-  background: linear-gradient(to bottom, #ffffff 0%, #000000 0%);
-  font-weight: 700px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: -5px -5px 1px #76a0e7;
-  animation: var(--animation-slide-in-left) forwards;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  animation: var(--animation-slide-in-up) forwards;
   animation-duration: 3500ms;
   
 }
 
 .link-container a {
   text-decoration: none;
-  
-  
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: -1px -1px 1px #098FB3, -2px -2px 2px white;
+  text-transform: uppercase;  
 }
 
 
 
-.logo{
-  z-index: 100;
-  height: 10rem;
-  width: 10rem;
-}
+
 
 
