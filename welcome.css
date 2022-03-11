@@ -9,13 +9,10 @@
 html {
   font-size: 10px;
   font-family: "Kanit", sans-serif;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(images/earth-ge113a6ad7_1920.png), no-repeat, center;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(images/earth-ge113a6ad7_1920.png);
   background-size: cover;
-  overflow-x: hidden;
- 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
 @import "https://unpkg.com/open-props";
+:root{
+  --text-shadow: -1.5px -1.5px 10px  #098FB3;
+}
 * {
+ 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,12 +13,11 @@
 html {
   font-size: 10px;
   font-family: "Kanit", sans-serif; 
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(images/earth-ge113a6ad7_1920.png), no-repeat, center;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(images/woman-6012907_1920.jpg);
   background-size: cover;
-  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   
 }
 
 
@@ -122,14 +125,13 @@ header {
 
 .wraper {
   width: 80%;
-  height: 90vh;
-    
+  height: 90%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(6, minmax(5rem, 1fr));
-  grid-template-rows: 10%, 10%, 12%, 12%, 10%, 10%, 13%, 13%, 10%;
+  grid-template-columns: repeat(6, minmax(3rem, 1fr));
+  grid-template-rows: 10%, 10%, 12%, 12%, 10%, 10%, 13%, 13%, 5%, 5%;
   grid-gap: 1rem;
    
   grid-template-areas:
@@ -138,10 +140,11 @@ header {
     "hand ph ph ph ph ph"
     "sec sec sec sec sec sec"
     "h2 h2 h2 pr pr pr"
-    "h2p h2p h2p h2p2 h2p2 h2p2"
-    "h2p h2p h2p h2p2 h2p2 h2p2"
-    "h2p h2p h2p h2p2 h2p2 h2p2"
-    "ctc ctc ctc ctc ctc ctc";
+    "h2p h2p . h2p2 h2p2 h2p2"
+    "h2p h2p . h2p2 h2p2 h2p2"
+    "h2p h2p . h2p2 h2p2 h2p2"
+    "ctc ctc ctc ctc ctc ctc"
+    "e e e e e e";
 }
 .blank{
 grid-area: b;
@@ -152,7 +155,7 @@ height: 4rem;
   grid-area: h1;
   font-size: 2rem;
   color: white;
-  text-shadow: -1px -1px 1px #098FB3;
+  text-shadow: var(--text-shadow);
   align-items: center;
   justify-content: center;
   width: fit-content;
@@ -179,7 +182,7 @@ height: 4rem;
   grid-area: ph;
   font-size: 2.3em;
   color: white;
-  text-shadow: -1px -1px 1px #098FB3;
+  text-shadow: var(--text-shadow);
   width: 100%;
   animation: var(--animation-slide-in-up);
   animation-duration: 3500ms;
@@ -196,7 +199,7 @@ height: 4rem;
   grid-area: sec;
   font-size: 2.3em;
   color: white;
-  text-shadow: -1px -1px 1px #098FB3;
+  text-shadow: var(--text-shadow);
   align-items: center;
   justify-content: center;
  
@@ -211,17 +214,16 @@ height: 4rem;
 
 .project-title{
   grid-area: h2;
-  font-size: 2.3em;
-  text-shadow: -1px -1px 1px #098FB3;
+  display: flex;
+  font-size: 2.3em;  
   color: white;
-  align-items: center;
-  justify-content: center;
-  height: fit-content;
+  text-shadow: var(--text-shadow);
+   height: fit-content;
   
 }
 
 .project-title h2{
-  text-align: center;
+  text-align: left;
   animation: var(--animation-slide-in-up);
   animation-duration: 3500ms;
 }
@@ -230,7 +232,7 @@ height: 4rem;
   grid-area: h2p;
   font-size: 2.3em;
   color: white;
-  text-shadow: -1px -1px 1px #098FB3;
+  text-shadow: var(--text-shadow);
   align-items: center;
   justify-content: center;
 
@@ -242,7 +244,7 @@ height: 4rem;
   grid-area: h2p2;
   font-size: 2.3em;
   color: white;
-  text-shadow: -1px -1px 1px #098FB3;
+  text-shadow: var(--text-shadow);
   align-items: center;
   justify-content: center;
 }
@@ -252,7 +254,7 @@ height: 4rem;
   grid-area: pr;
   font-size: 2.3em;
   color: white;
-  text-shadow: -1px -1px 1px #098FB3;
+  text-shadow: var(--text-shadow);
   align-items: center;
   justify-content: center;
 }
@@ -267,14 +269,26 @@ height: 4rem;
   padding-top: .5rem;
   width: 18rem;
   margin-left: auto;
-  margin-right: auto;
-  
+  margin-right: auto;  
 }
+
+.contact:hover{
+  background-color: #052049;
+  animation: var(--animation-scale-up) forwards;
+  animation-duration: 2000ms;
+  }
 
 .contact a{
   text-decoration: none; 
   font-size: 1.4rem;
   color: white;
-  text-shadow: -1px -1px 1px #098FB3;
+  text-shadow: var(--text-shadow);
   text-align: center; 
+}
+
+
+
+.e{
+  grid-area: e;
+  height: 5vh;
 }
