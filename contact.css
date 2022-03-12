@@ -156,13 +156,17 @@ header {
     font-size: 3em;
   color: white;
   width: 100%;
+  padding: 2rem;
   text-align: center;
-  top: 0;
+  animation: var(--animation-fade-in);
+  transition: 1500ms;
   }
 
   .slogan{
     font-size: 3.5rem;
     text-shadow: var(--text-shadow);
+    animation: var(--animation-slide-in-right);
+  transition: 1500ms;
   }
 
   .form-container{
@@ -230,11 +234,47 @@ header {
   }
 
   .btn-icon{
-    color: white;
     position: absolute;
+    color: white;
     right: 2rem;
-    top: .5rem;
+    top: .6rem;
+    
   }
+
+  .social-media{
+    grid-area: smedia;
+    height: 100%;
+    width:  100%;
+    
+  }
+
+  .inner1, .inner2{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .fa-linkedin, .fa-github{
+    color: white;
+    height: 45%;
+    width: 45%;
+    background-color: #098FB3;
+    border-radius: 50%;
+    border: .5rem solid white;
+    padding: 3rem;    
+  }
+
+   .fa-twitter-square, .fa-instagram-square, .fa-facebook{
+    color: white;
+    height: 30%;
+    width: 30%;
+    background-color: #098FB3;
+    border-radius: 50%;
+    border: .5rem solid white;
+    padding: 3rem;
+  }
+
+  
 
 
   @media(max-width: 700px){
