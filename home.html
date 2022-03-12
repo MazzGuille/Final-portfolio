@@ -5,18 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">    
-    <link rel="stylesheet" href="fade.css">
-    <script defer src="node_modules/swup/dist/swup.min.js" ></script>
-    <script src="fade.js" defer></script>
-    <script src="home.js" defer></script>
+    <link rel="stylesheet" href="transition.css">
+    <script defer src="transition.js"></script>
+    <script defer src="home.js"></script>
     <title>MazzCode</title>
 </head>
 <body>
-    <div id="swup" class="transition-fade container">
-        <form action="welcome.html" class="form" autocomplete="off">
-            <input class="visitor-name" type="text" id="txt" placeholder="ENTER YOUR NAME" size="50">
-            <input class="btn" type="submit" value="Let's go!" onclick="welcome();">
-        </form>
-    </div>
+
+<div class="transition is-active"></div>
+
+        <div class="container">
+            <form action="welcome.html" class="form" autocomplete="off">
+                <input class="visitor-name" type="text" id="txt" placeholder="ENTER YOUR NAME" size="50">
+                <input class="btn" type="submit" value="Let's go!" onclick="welcome();">
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$('html').mousemove(function(a){
+	
+	var mouseX=(a.pageX*-1/15);
+	var mouseY=(a.pageY*-1/15);
+	$(this).css('background-position',mouseX+'px '+mouseY+'px')	
+})
+</script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 html {
   font-size: 10px;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(images/astronomy-1850461_1920.jpg);
-  background-size: cover;
+  background-size: 110%, 110%;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
