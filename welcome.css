@@ -13,7 +13,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; 
 }
 
 
@@ -136,7 +136,6 @@ h1 {
   text-shadow: -1px -1px 1px #098FB3, -2px -2px 2px white;
   text-transform: uppercase;
   margin-top: -13%;
-  animation: var(--animation-float);
   animation: var(--animation-slide-in-right) forwards;
   animation-duration: 3000ms;
 }
@@ -171,7 +170,14 @@ h1 {
   background-color: #054658;
 }
 
+.fade_out{
+  opacity: 0;
+}
 
+.fade_transition{
+  transition-property: opacity;
+  transition-duration: 2s;
+}
 
 
 

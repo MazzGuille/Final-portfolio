@@ -7,47 +7,46 @@
     <link rel="stylesheet" href="welcome.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.js" integrity="sha512-TbK1NsnYsmC/wJRzEIvaG5D23gVk8cQBPCSVRtvaTTTEZyRoBSmPEvYqMZsafm7Mtt0XzdMwTCkBxPifBSKc5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script> 
-    <script defer src="script.js" ></script>
+    <script defer src="welcome.js"></script>
     <title>MazzCode</title>
 </head>
 <body>
-   
-    <header>
-        <nav id="nav-container" class="navbar">
-            <div
-            id="ham" class="hamburguer-menu">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
+        <header>
+            <nav id="nav-container" class="navbar">
+                <div
+                id="ham" class="hamburguer-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1>HELLO <span id="name"></span> !
+                <br>
+                WELCOME TO
+                <br>
+                MazzCode
+                <br>
+                ENJOY YOUR TRIP!
+            </h1>
+            <div class="link-container">
+                <a href="about.html" class="link"><i class="fa-solid fa-hand-point-right"></i></a>
             </div>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="home.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class=" main">
-        <h1>HELLO <span id="name"></span> !
-            <br>
-            WELCOME TO
-            <br>
-            MazzCode
-            <br>
-            ENJOY YOUR TRIP!
-        </h1>        
-        <div class="link-container">
-            <a href="about.html" class="link"><i class="fa-solid fa-hand-point-right"></i></a>
-        </div>
-    </main>   
+        </main>
 </body>
 </html>
