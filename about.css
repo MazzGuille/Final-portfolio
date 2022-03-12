@@ -4,11 +4,12 @@
   --text-shadow: -1.5px -1.5px 10px  #098FB3;
 }
 * {
- 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+
 
 html {
   font-size: 10px;
