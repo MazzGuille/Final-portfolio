@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="about.css" />
-    <script src="welcome.js" defer></script>   
+    <link rel="stylesheet" href="fade.css">
+    <script defer src="node_modules/swup/dist/swup.min.js" ></script>  
+    <script defer src="fade.js"></script>
+    <script defer src="welcome.js"></script>   
     <title>MazzCode-About</title>
 </head>
 <body>
@@ -33,7 +36,7 @@
             </ul>
         </nav>
     </header>
-    <div class="wraper">
+    <div id="swup" class=" transition-fade wraper">
         <div class="blank"></div>
           <div class="title">
             <h1>A BIT ABOUT ME</h1>
@@ -68,7 +71,7 @@
             <div class="project2"><p>aqui iria la primera tarjeta</p></div>
         <div class="contact">
             <a href="contact.html">
-                <p>Let's make magic!</p>
+                <p><I>CONTACT ME!</I></p>
                 <div class="e"></div>
             </a>
         </div>

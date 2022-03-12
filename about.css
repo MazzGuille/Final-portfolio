@@ -14,9 +14,10 @@
 html {
   font-size: 10px;
   font-family: "Kanit", sans-serif; 
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(images/woman-6012907_1920.jpg);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(images/mountains-190055.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
    
 }
@@ -167,16 +168,21 @@ height: 4rem;
 }
 
 .hand {
-  height: 8rem;
-  width: 8rem;
-  grid-area: hand;
+  grid-area: hand; 
+  display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+  height: 100%;
+  width: 100%;
   animation: var(--animation-slide-in-up);
   animation-duration: 3500ms;
 }
 
 .hand img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-width: 80%;
+  margin: auto;
 }
 
 .presentation {
@@ -264,27 +270,31 @@ height: 4rem;
   grid-area: ctc;  
   align-items: center;
   justify-content: center;  
-  background-color: #098FB3;
+  background-color: #076883; 
   border-radius: 1.6rem;
   height: 3rem;
   padding-top: .5rem;
   width: 18rem;
   margin-left: auto;
   margin-right: auto;  
+  position: relative;
 }
 
 .contact:hover{
-  background-color: #052049;
+  background-color: #098FB3;
   animation: var(--animation-scale-up) forwards;
   animation-duration: 2000ms;
   }
 
 .contact a{
   text-decoration: none; 
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: white;
   text-shadow: var(--text-shadow);
-  text-align: center; 
+  position: absolute; 
+  left: 16%;
+  top: 5%;
+  letter-spacing: .15rem;
 }
 
 
