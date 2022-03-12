@@ -158,15 +158,15 @@ header {
   width: 100%;
   padding: 2rem;
   text-align: center;
-  animation: var(--animation-fade-in);
-  transition: 1500ms;
+  animation: var(--animation-slide-in-right);
+  transition: 2500ms;
   }
 
   .slogan{
     font-size: 3.5rem;
     text-shadow: var(--text-shadow);
     animation: var(--animation-slide-in-right);
-  transition: 1500ms;
+  transition: 2500ms;
   }
 
   .form-container{
